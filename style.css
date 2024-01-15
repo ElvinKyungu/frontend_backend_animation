@@ -11,7 +11,6 @@ body {
     display: flex;
     align-items: center;
     height: 100vh;
-
 }
 
 /* Card */
@@ -28,6 +27,7 @@ body {
     transition: 1.5s ease;
     transform-style: preserve-3d;
     cursor: pointer;
+    text-shadow: 0 0 5px black;
 }
 
 .card:hover {
@@ -45,10 +45,6 @@ body {
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-}
-
-.card {
-  text-shadow: 0 0 5px black;
 }
 
 .card .back {
@@ -76,19 +72,18 @@ body {
 }
 
 .card::before,
-.card::after{
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  background: url(https://img.freepik.com/free-vector/night-rice-field-terraces-asian-mountains-landscape-with-paddy-plantation-cascades-chinese-agricultural-farm-dark-starry-sky-with-full-moon-glowing-fireflies-cartoon-vector-illustration_107791-10584.jpg?w=1380&t=st=1661917598~exp=1661918198~hmac=a0d965cd60356d79a73e280f5cc0a264eb2ecf00c77d870e0fd866984d4faf72);
-  transform: rotateY(.5turn) translateZ(1px);
-
+.card::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: url(https://img.freepik.com/free-vector/night-rice-field-terraces-asian-mountains-landscape-with-paddy-plantation-cascades-chinese-agricultural-farm-dark-starry-sky-with-full-moon-glowing-fireflies-cartoon-vector-illustration_107791-10584.jpg?w=1380&t=st=1661917598~exp=1661918198~hmac=a0d965cd60356d79a73e280f5cc0a264eb2ecf00c77d870e0fd866984d4faf72);
+    transform: rotateY(.5turn) translateZ(1px);
 }
 
 .card::before {
-  transform: none;
-  background: url(https://img.freepik.com/free-vector/asian-rice-field-terraces-morning-mountains-landscape-paddy-plantation-cascades-farm-mount-water-channel-with-growing-plants-scenery-meadow-with-green-grass-cartoon-vector-illustration_107791-10452.jpg?w=1380&t=st=1661917467~exp=1661918067~hmac=fcd8e64a15f4900ad755025fb1a92198196dcc22911435ae660d9185203ddfca);
+    transform: none;
+    background: url(https://img.freepik.com/free-vector/asian-rice-field-terraces-morning-mountains-landscape-paddy-plantation-cascades-farm-mount-water-channel-with-growing-plants-scenery-meadow-with-green-grass-cartoon-vector-illustration_107791-10452.jpg?w=1380&t=st=1661917467~exp=1661918067~hmac=fcd8e64a15f4900ad755025fb1a92198196dcc22911435ae660d9185203ddfca);
 }
